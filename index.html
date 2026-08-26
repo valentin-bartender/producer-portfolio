@@ -2,196 +2,667 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Valentin Rodin — Video Producer Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Valentin Rodin — Video Producer, Seoul</title>
     <meta
       name="description"
-      content="Video producer portfolio for brand content, UGC, YouTube, Reels, Shorts and hybrid live-action/AI content."
+      content="Video producer in Seoul. Ads, UGC, YouTube, Reels and Shorts — concept, shooting and editing handled by one person, start to finish."
     />
-    <meta property="og:title" content="Valentin Rodin — Video Producer Portfolio" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Valentin Rodin — Video Producer, Seoul" />
     <meta
       property="og:description"
-      content="Creative producer and video producer for brand content, UGC, YouTube, Reels, Shorts and creator-led campaigns."
+      content="Ads, UGC, YouTube, Reels and Shorts — concept, shooting and editing handled by one person, start to finish."
     />
-    <meta property="og:image" content="https://valentin-rodin-producer-portfolio.valentintui.chatgpt.site/portfolio-assets/valentin-portrait.jpg" />
-    <link rel="icon" href="favicon.svg" />
+    <meta property="og:image" content="assets/valentin-portrait.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main>
-      <nav class="nav" aria-label="Portfolio navigation">
-        <a class="brand" href="#top" aria-label="Valentin Rodin portfolio">VR</a>
-        <div class="navLinks">
-          <a href="#about">Who I Am</a>
-          <a href="#skills">Skills</a>
-          <a href="#portfolio">Portfolio</a>
-          <a class="navButton" href="#contacts">Contact</a>
-        </div>
-      </nav>
+    <a class="skip" href="#work">Skip to work</a>
 
-      <section id="top" class="hero">
-        <img class="heroImage" src="https://valentin-rodin-producer-portfolio.valentintui.chatgpt.site/portfolio-assets/valentin-portrait.jpg" alt="Valentin Rodin portrait" />
-        <div class="heroShade"></div>
-        <div class="slateMark" aria-hidden="true">
-          <span>REC</span>
-          <span>VIDEO PRODUCER</span>
-          <span>SEOUL</span>
+    <header class="nav" id="nav">
+      <div class="nav__inner">
+        <a class="nav__brand" href="#top" aria-label="Valentin Rodin — home">
+          <span class="nav__mark" aria-hidden="true">VR</span>
+          <span class="nav__name">Valentin Rodin</span>
+        </a>
+        <nav class="nav__links" aria-label="Sections">
+          <a href="#work">Work</a>
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+        </nav>
+        <div class="nav__end">
+          <button
+            class="nav__theme"
+            type="button"
+            id="themeToggle"
+            aria-label="Switch colour theme"
+            title="Switch colour theme"
+          >
+            <svg viewBox="0 0 20 20" aria-hidden="true" width="17" height="17">
+              <path
+                class="icon-sun"
+                d="M10 3.2V1.6M10 18.4v-1.6M16.8 10h1.6M1.6 10h1.6M14.8 5.2l1.1-1.1M4.1 15.9l1.1-1.1M14.8 14.8l1.1 1.1M4.1 4.1l1.1 1.1"
+                stroke="currentColor"
+                stroke-width="1.4"
+                stroke-linecap="round"
+                fill="none"
+              />
+              <circle class="icon-sun" cx="10" cy="10" r="3.6" stroke="currentColor" stroke-width="1.4" fill="none" />
+              <path
+                class="icon-moon"
+                d="M16.2 12.4A6.8 6.8 0 0 1 7.6 3.8a6.8 6.8 0 1 0 8.6 8.6Z"
+                fill="currentColor"
+              />
+            </svg>
+          </button>
+          <a class="btn btn--sm" href="#contact">Get in touch</a>
         </div>
-        <div class="heroInner">
-          <div class="heroContent">
-            <p class="kicker">Creative Producer / Video Producer / Content Creator</p>
-            <h1>Valentin Rodin</h1>
-            <p class="heroLead">
-              I shoot, edit and produce video for brands, products and creators:
-              ad videos, UGC, YouTube formats, Reels, Shorts and hybrid live-action / AI content.
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- ───────────────────────── HERO ───────────────────────── -->
+      <section class="hero">
+        <div class="wrap">
+          <p class="eyebrow reveal">Valentin Rodin · Video producer · Seoul</p>
+          <h1 class="hero__title reveal">
+            One person.<br />Concept to final&nbsp;cut.
+          </h1>
+          <p class="hero__lead reveal">
+            I shoot, edit and produce video for brands and creators — ads, UGC, YouTube,
+            Reels and Shorts. Start with the 59-second version.
+          </p>
+
+          <div class="hero__stage reveal">
+            <button
+              class="player player--hero"
+              type="button"
+              data-video="qHnbV96nYWA"
+              data-aspect="16:9"
+              data-title="Full-Cycle Video Producer — introduction"
+            >
+              <img
+                src="assets/intro.jpg"
+                alt="Valentin Rodin seated in a studio, from the introduction video"
+                width="1280"
+                height="720"
+                fetchpriority="high"
+              />
+              <span class="player__scrim" aria-hidden="true"></span>
+              <span class="player__play" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="26" height="26"><path d="M8 5.4v13.2L19 12 8 5.4Z" fill="currentColor" /></svg>
+              </span>
+              <span class="player__meta">
+                <span class="player__label">Introduction</span>
+                <span class="player__time">0:59</span>
+              </span>
+            </button>
+          </div>
+
+          <ul class="stats reveal">
+            <li><strong>Top&nbsp;Rated</strong><span>on Upwork</span></li>
+            <li><strong>100%</strong><span>job success</span></li>
+            <li><strong>5.0</strong><span>client rating</span></li>
+            <li><strong>Seoul</strong><span>South Korea</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ───────────────────────── WORK ───────────────────────── -->
+      <section class="section section--work" id="work">
+        <div class="wrap">
+          <header class="sectionHead reveal">
+            <p class="eyebrow">Selected work</p>
+            <h2>Six projects, six different jobs to&nbsp;do.</h2>
+          </header>
+
+          <div class="workGrid">
+            <!-- Veloso Tours -->
+            <article class="work reveal">
+              <button
+                class="player"
+                type="button"
+                data-video="Vnoljp7z2x4"
+                data-aspect="16:9"
+                data-title="Veloso Tours — AI-powered commercial"
+              >
+                <img src="assets/veloso.jpg" alt="Veloso Tours commercial thumbnail" width="1280" height="720" loading="lazy" />
+                <span class="player__scrim" aria-hidden="true"></span>
+                <span class="player__play" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="22" height="22"><path d="M8 5.4v13.2L19 12 8 5.4Z" fill="currentColor" /></svg>
+                </span>
+                <span class="player__time player__time--corner">2:28</span>
+              </button>
+
+              <div class="work__body">
+                <p class="work__kind">Brand commercial</p>
+                <h3 class="work__title">Veloso Tours</h3>
+                <p class="work__lede">
+                  A travel brand's commercial built to earn trust rather than sell hard —
+                  produced end to end with a consistent cast of AI actors.
+                </p>
+
+                <button class="disclose" type="button" aria-expanded="false" aria-controls="d-veloso">
+                  <span class="disclose__text">Full description</span>
+                  <span class="disclose__icon" aria-hidden="true">
+                    <svg viewBox="0 0 16 16" width="14" height="14"><path d="M4 6.2 8 10.2l4-4" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                  </span>
+                </button>
+                <div class="disclose__panel" id="d-veloso">
+                  <div class="disclose__inner">
+                    <p>
+                      The goal was to communicate trust, expertise and personalized service in a
+                      natural and engaging way, avoiding traditional hard-selling advertising
+                      techniques.
+                    </p>
+                    <p>
+                      To achieve this, I developed a complete AI-driven production pipeline
+                      featuring consistent AI actors, custom voice performances, realistic
+                      character interactions and cinematic storytelling.
+                    </p>
+                    <dl class="credits">
+                      <dt>Role</dt>
+                      <dd>Creative producer · AI video director · Editor</dd>
+                      <dt>Scope</dt>
+                      <dd>Concept · Script · Direction · Voice · Edit · Delivery</dd>
+                    </dl>
+                    <a class="textLink" href="https://www.upwork.com/freelancers/~0160cc048970d14fc8?p=2068696668419952640" target="_blank" rel="noreferrer">
+                      Case on Upwork
+                      <svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path d="M5 3h8v8M13 3 3.5 12.5" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Flashbook -->
+            <article class="work reveal">
+              <button
+                class="player"
+                type="button"
+                data-video="cT6XDWO0S5w"
+                data-aspect="9:16"
+                data-title="Flashbook — cinematic UGC brand promo"
+              >
+                <img src="assets/flashbook.jpg" alt="Flashbook brand promo thumbnail" width="1280" height="720" loading="lazy" />
+                <span class="player__scrim" aria-hidden="true"></span>
+                <span class="player__play" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="22" height="22"><path d="M8 5.4v13.2L19 12 8 5.4Z" fill="currentColor" /></svg>
+                </span>
+                <span class="player__time player__time--corner">0:37 · 9:16</span>
+              </button>
+
+              <div class="work__body">
+                <p class="work__kind">UGC · Brand promo</p>
+                <h3 class="work__title">Flashbook</h3>
+                <p class="work__lede">
+                  A book-summary app sold through a morning routine instead of a product demo —
+                  shot, performed and cut by me.
+                </p>
+
+                <button class="disclose" type="button" aria-expanded="false" aria-controls="d-flashbook">
+                  <span class="disclose__text">Full description</span>
+                  <span class="disclose__icon" aria-hidden="true">
+                    <svg viewBox="0 0 16 16" width="14" height="14"><path d="M4 6.2 8 10.2l4-4" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                  </span>
+                </button>
+                <div class="disclose__panel" id="d-flashbook">
+                  <div class="disclose__inner">
+                    <p>
+                      Produced a cinematic UGC-style promotional video for Flashbook, an
+                      AI-powered book summary app. Instead of a traditional product
+                      demonstration, the concept communicates the brand's core value through a
+                      personal morning routine and intentional daily planning.
+                    </p>
+                    <p>
+                      I handled the project end to end: concept development, scriptwriting,
+                      directing, filming, editing, lighting and colour correction, voice-over
+                      and modelling.
+                    </p>
+                    <p>
+                      The final video combines cinematic visuals and storytelling to create an
+                      engaging brand experience while naturally integrating the product into the
+                      narrative.
+                    </p>
+                    <dl class="credits">
+                      <dt>Role</dt>
+                      <dd>Director · Editor · Scriptwriter · Voice-over · On-camera talent</dd>
+                      <dt>Client</dt>
+                      <dd>Flashbook — recurring monthly production</dd>
+                    </dl>
+                    <a class="textLink" href="https://www.upwork.com/freelancers/~0160cc048970d14fc8?p=2076913395209060352" target="_blank" rel="noreferrer">
+                      Case on Upwork
+                      <svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path d="M5 3h8v8M13 3 3.5 12.5" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Tronergy Hub -->
+            <article class="work reveal">
+              <a
+                class="plate"
+                href="https://www.upwork.com/freelancers/~0160cc048970d14fc8?p=2073940017366597632"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Open the Tronergy Hub case on Upwork"
+              >
+                <span class="plate__label">Concept to delivery in 24h</span>
+                <span class="plate__title">Tronergy&nbsp;Hub</span>
+                <span class="plate__tag">Case on Upwork</span>
+              </a>
+
+              <div class="work__body">
+                <p class="work__kind">Explainer · 24-hour delivery</p>
+                <h3 class="work__title">Tronergy Hub</h3>
+                <p class="work__lede">
+                  A full marketing explainer built and delivered inside one day, in several
+                  languages, without losing a professional finish.
+                </p>
+
+                <button class="disclose" type="button" aria-expanded="false" aria-controls="d-tronergy">
+                  <span class="disclose__text">Full description</span>
+                  <span class="disclose__icon" aria-hidden="true">
+                    <svg viewBox="0 0 16 16" width="14" height="14"><path d="M4 6.2 8 10.2l4-4" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                  </span>
+                </button>
+                <div class="disclose__panel" id="d-tronergy">
+                  <div class="disclose__inner">
+                    <p>
+                      Delivered a full-cycle AI marketing video in just one day — from concept and
+                      scriptwriting to AI avatars, multilingual voiceovers, lip-sync, motion
+                      graphics and final editing.
+                    </p>
+                    <p>
+                      The result was a scalable promotional video produced in multiple languages
+                      with a fast turnaround, reduced production costs and a professional-quality
+                      finish.
+                    </p>
+                    <dl class="credits">
+                      <dt>Role</dt>
+                      <dd>Creative producer · Scriptwriter · Video editor</dd>
+                      <dt>Turnaround</dt>
+                      <dd>24 hours, concept to delivery</dd>
+                    </dl>
+                    <a class="textLink" href="https://www.upwork.com/freelancers/~0160cc048970d14fc8?p=2073940017366597632" target="_blank" rel="noreferrer">
+                      Case on Upwork
+                      <svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path d="M5 3h8v8M13 3 3.5 12.5" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- AI Beauty Influencer -->
+            <article class="work reveal">
+              <a
+                class="plate"
+                href="https://www.upwork.com/freelancers/~0160cc048970d14fc8"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Open the AI Beauty Influencer case on Upwork"
+              >
+                <span class="plate__label">Content brand launch</span>
+                <span class="plate__title">AI&nbsp;Beauty<br />Influencer</span>
+                <span class="plate__tag">Case on Upwork</span>
+              </a>
+
+              <div class="work__body">
+                <p class="work__kind">Virtual influencer · Strategy</p>
+                <h3 class="work__title">AI Beauty Influencer</h3>
+                <p class="work__lede">
+                  A beauty startup needed a face it did not have — so I designed one, and the
+                  first post it would publish.
+                </p>
+
+                <button class="disclose" type="button" aria-expanded="false" aria-controls="d-beauty">
+                  <span class="disclose__text">Full description</span>
+                  <span class="disclose__icon" aria-hidden="true">
+                    <svg viewBox="0 0 16 16" width="14" height="14"><path d="M4 6.2 8 10.2l4-4" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                  </span>
+                </button>
+                <div class="disclose__panel" id="d-beauty">
+                  <div class="disclose__inner">
+                    <p>
+                      The goal was to create an AI influencer that perfectly matches the brand
+                      identity of a beauty startup — someone trustworthy and aspirational.
+                    </p>
+                    <p>
+                      First challenge: designing the right character — appearance, vibe and setup
+                      that signals expertise in lip care. Second: generating video that looks
+                      natural and indistinguishable from real creator content. Third: crafting the
+                      first post with a hook strong enough to stop the scroll and build audience
+                      connection — no forced sales, just authentic value.
+                    </p>
+                    <dl class="credits">
+                      <dt>Role</dt>
+                      <dd>Content strategist · Virtual influencer creator · Editor</dd>
+                      <dt>Output</dt>
+                      <dd>Character design · Creator-style video · Launch post</dd>
+                    </dl>
+                    <a class="textLink" href="https://www.upwork.com/freelancers/~0160cc048970d14fc8" target="_blank" rel="noreferrer">
+                      Case on Upwork
+                      <svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path d="M5 3h8v8M13 3 3.5 12.5" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Acting in Korea -->
+            <article class="work reveal">
+              <button
+                class="player"
+                type="button"
+                data-video="AALZUUmaCtA"
+                data-aspect="16:9"
+                data-title="Acting in Korea — YouTube documentary"
+              >
+                <img src="assets/acting-korea.jpg" alt="Acting in Korea video thumbnail" width="1280" height="720" loading="lazy" />
+                <span class="player__scrim" aria-hidden="true"></span>
+                <span class="player__play" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="22" height="22"><path d="M8 5.4v13.2L19 12 8 5.4Z" fill="currentColor" /></svg>
+                </span>
+                <span class="player__time player__time--corner">9:16</span>
+              </button>
+
+              <div class="work__body">
+                <p class="work__kind">YouTube · Long form</p>
+                <h3 class="work__title">Acting in Korea</h3>
+                <p class="work__lede">
+                  A 9-minute, first-hand account of working as a foreign actor in Korea —
+                  written, presented and edited to hold attention without hype.
+                </p>
+
+                <button class="disclose" type="button" aria-expanded="false" aria-controls="d-korea">
+                  <span class="disclose__text">Full description</span>
+                  <span class="disclose__icon" aria-hidden="true">
+                    <svg viewBox="0 0 16 16" width="14" height="14"><path d="M4 6.2 8 10.2l4-4" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                  </span>
+                </button>
+                <div class="disclose__panel" id="d-korea">
+                  <div class="disclose__inner">
+                    <p>
+                      I worked as an actor in Korea for six months, starting with almost no
+                      experience, no Korean language and no connections. This video is my honest,
+                      realistic breakdown of what that is actually like — without illusions, hype
+                      or fake success stories.
+                    </p>
+                    <p>
+                      It covers how the system really works: money and payment timelines,
+                      documents and visas, who you are genuinely competing with, how realistic
+                      acting with no experience is, and how Korea compares with Thailand, China
+                      and India. It closes on burnout and career change — why I moved into acting
+                      full time.
+                    </p>
+                    <p>
+                      A self-produced format: research, script, on-camera presenting, shooting,
+                      editing and retention-focused pacing, all handled solo.
+                    </p>
+                    <dl class="credits">
+                      <dt>Role</dt>
+                      <dd>Writer · Presenter · Camera · Editor</dd>
+                      <dt>Format</dt>
+                      <dd>YouTube long form · 9:16 minutes</dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Actor portfolio -->
+            <article class="work reveal">
+              <button
+                class="player"
+                type="button"
+                data-video="WYwu0I4R8Uk"
+                data-aspect="16:9"
+                data-title="Actor portfolio — on-camera reel"
+              >
+                <img src="assets/actor-reel.jpg" alt="Actor portfolio reel thumbnail" width="1280" height="720" loading="lazy" />
+                <span class="player__scrim" aria-hidden="true"></span>
+                <span class="player__play" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="22" height="22"><path d="M8 5.4v13.2L19 12 8 5.4Z" fill="currentColor" /></svg>
+                </span>
+                <span class="player__time player__time--corner">0:48</span>
+              </button>
+
+              <div class="work__body">
+                <p class="work__kind">On-camera · Reel</p>
+                <h3 class="work__title">Actor portfolio</h3>
+                <p class="work__lede">
+                  48 seconds of on-camera range — the reason a brand can hire one person
+                  instead of a producer plus a face.
+                </p>
+
+                <button class="disclose" type="button" aria-expanded="false" aria-controls="d-actor">
+                  <span class="disclose__text">Full description</span>
+                  <span class="disclose__icon" aria-hidden="true">
+                    <svg viewBox="0 0 16 16" width="14" height="14"><path d="M4 6.2 8 10.2l4-4" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                  </span>
+                </button>
+                <div class="disclose__panel" id="d-actor">
+                  <div class="disclose__inner">
+                    <p>
+                      A short acting reel cut for casting directors and brand clients: presence,
+                      delivery and range in one pass, with no voice-over explaining what you are
+                      looking at.
+                    </p>
+                    <p>
+                      On-camera performance is part of the production offer. When a project needs
+                      a presenter, a spokesperson or a UGC creator on screen, that is one less
+                      role to cast, schedule and pay for.
+                    </p>
+                    <dl class="credits">
+                      <dt>Role</dt>
+                      <dd>Performer · Editor</dd>
+                      <dt>Also on</dt>
+                      <dd>IMDb — see contact below</dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ───────────────────────── SERVICES ───────────────────────── -->
+      <section class="section section--alt" id="services">
+        <div class="wrap">
+          <header class="sectionHead reveal">
+            <p class="eyebrow">Services</p>
+            <h2>What you can hand over, and what comes&nbsp;back.</h2>
+          </header>
+
+          <div class="serviceGrid">
+            <article class="service reveal">
+              <h3>Ads &amp; UGC</h3>
+              <p>Product, brand and offer videos in creator-native language, built to be tested.</p>
+              <ul>
+                <li>Ad videos</li>
+                <li>UGC</li>
+                <li>Product reviews</li>
+                <li>DTC ad variations</li>
+              </ul>
+            </article>
+            <article class="service reveal">
+              <h3>YouTube &amp; Shorts</h3>
+              <p>Structure, pacing and retention-focused editing for formats that live or die on watch time.</p>
+              <ul>
+                <li>Long form</li>
+                <li>Reels / Shorts</li>
+                <li>Story structure</li>
+                <li>Scriptwriting</li>
+              </ul>
+            </article>
+            <article class="service reveal">
+              <h3>On camera</h3>
+              <p>A presenter and model already on the crew — TV presenting training at Ostankino / MITRO.</p>
+              <ul>
+                <li>Spokesperson video</li>
+                <li>Presenting</li>
+                <li>Voice-over</li>
+                <li>Casting when needed</li>
+              </ul>
+            </article>
+            <article class="service reveal">
+              <h3>Hybrid &amp; AI</h3>
+              <p>Live-action performance extended with AI environments, avatars and b-roll — used as an accelerator, not a gimmick.</p>
+              <ul>
+                <li>AI actors &amp; voices</li>
+                <li>Multilingual versions</li>
+                <li>Motion graphics</li>
+                <li>Colour</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ───────────────────────── PROOF ───────────────────────── -->
+      <section class="section section--proof">
+        <div class="wrap">
+          <header class="sectionHead reveal">
+            <p class="eyebrow">Client feedback</p>
+            <h2>Two of three reviews. Both five out of&nbsp;five.</h2>
+          </header>
+
+          <div class="quoteGrid">
+            <figure class="quote reveal">
+              <blockquote>
+                <p>
+                  Valentin is an excellent and talented freelancer. We've been working with him to
+                  film our ad campaigns for several months now, and he delivers every time, without
+                  fail. He's reliable, polite, and a prompt communicator, which makes assigning jobs
+                  effortless, coordinating shoots for our Meta ads in South Korea. The footage is
+                  consistently high quality and he handles feedback gracefully.
+                </p>
+              </blockquote>
+              <figcaption>
+                <span class="quote__stars" aria-label="Rated 5 out of 5">★★★★★</span>
+                <span class="quote__who">Max S.</span>
+                <span class="quote__job">Hands-on videographer, recurring monthly work · July 2026</span>
+              </figcaption>
+            </figure>
+
+            <figure class="quote reveal">
+              <blockquote>
+                <p>
+                  It was a pleasure working with Valentin on our video editing project. He delivered
+                  high-quality work, communicated clearly throughout the process, and responded
+                  promptly to feedback. His attention to detail, creativity, and professionalism
+                  made the collaboration smooth and efficient. I'm very happy with the final result
+                  and highly recommend him.
+                </p>
+              </blockquote>
+              <figcaption>
+                <span class="quote__stars" aria-label="Rated 5 out of 5">★★★★★</span>
+                <span class="quote__who">Lesley T.</span>
+                <span class="quote__job">Event reels, clean professional style · February 2026</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ───────────────────────── ABOUT ───────────────────────── -->
+      <section class="section section--alt" id="about">
+        <div class="wrap about">
+          <div class="about__media reveal">
+            <img
+              src="assets/valentin-portrait.jpg"
+              alt="Valentin Rodin"
+              width="2200"
+              height="1466"
+              loading="lazy"
+            />
+          </div>
+          <div class="about__copy">
+            <p class="eyebrow reveal">About</p>
+            <h2 class="reveal">A one-person team, on purpose.</h2>
+            <p class="reveal">
+              Scriptwriting, shooting, editing, colour — and I often appear on camera myself.
+              That removes the hand-offs that usually cost a project its weeks and a serious
+              part of its budget.
             </p>
-            <div class="heroActions">
-              <a href="#portfolio">View work</a>
-              <a href="#contacts">Contact</a>
-            </div>
-          </div>
-          <aside class="heroPanel" aria-label="Production highlights">
-            <span>Production focus</span>
-            <strong>Full-cycle video</strong>
-            <strong>YouTube / UGC / ads</strong>
-            <strong>On-camera delivery</strong>
-            <span>Concept · Shooting · Editing · Seoul</span>
-          </aside>
-        </div>
-      </section>
-
-      <section id="about" class="section aboutSection">
-        <div>
-          <p class="sectionLabel">Who I Am</p>
-          <h2>Hands-on video producer with a creator’s face and a producer’s structure.</h2>
-        </div>
-        <div class="aboutCopy">
-          <p>
-            I create video content for brands and creators from idea to delivery:
-            concept, script, shooting, editing, pacing and final packaging.
-          </p>
-          <p>
-            My background combines acting, product reviews, UGC, video production,
-            coaching communication, international client-facing work and formal TV
-            presenting training at Ostankino / MITRO. This helps me work not only as an
-            editor, but as a person who can understand the brief, appear on camera,
-            organize the message and finish the content.
-          </p>
-          <div class="proofStrip">
-            <span>Ostankino / MITRO TV presenting background</span>
-            <span>VN Motion Art, Moscow</span>
-            <span>5.0 client feedback across freelance projects</span>
-            <span>Actor and model with on-camera experience</span>
-            <span>Based in Seoul, South Korea</span>
-            <span>Fluent English / native Russian</span>
+            <p class="reveal">
+              I shoot day-to-day on an iPhone&nbsp;15&nbsp;Pro, which is fast and flexible for UGC
+              and on-location work. When a project needs maximum image quality I rent a
+              professional camera kit, so you only pay for that gear when it is actually needed.
+            </p>
+            <p class="reveal">
+              My background combines acting, product reviews, UGC, coaching communication,
+              international client work and formal TV presenting training at Ostankino / MITRO.
+              I can read a brief, appear on camera, organize the message and finish the content.
+            </p>
+            <ul class="factList reveal">
+              <li><span>Based in</span><strong>Seoul, South Korea</strong></li>
+              <li><span>Languages</span><strong>Fluent English · Native Russian</strong></li>
+              <li><span>Training</span><strong>Ostankino / MITRO TV presenting</strong></li>
+              <li><span>Response time</span><strong>Usually within a few hours</strong></li>
+            </ul>
           </div>
         </div>
       </section>
 
-      <section id="skills" class="section skillsSection">
-        <div class="sectionHeader">
-          <p class="sectionLabel">Skills</p>
-          <h2>What I can produce</h2>
-        </div>
-        <div class="skillGrid">
-          <article>
-            <h3>Video production</h3>
-            <ul>
-              <li>Shooting</li>
-              <li>Editing</li>
-              <li>Production planning</li>
-              <li>Cinematography</li>
-            </ul>
-          </article>
-          <article>
-            <h3>Brand content</h3>
-            <ul>
-              <li>Ad videos</li>
-              <li>UGC</li>
-              <li>Product reviews</li>
-              <li>E-commerce / DTC variations</li>
-            </ul>
-          </article>
-          <article>
-            <h3>Creator formats</h3>
-            <ul>
-              <li>YouTube</li>
-              <li>Reels / Shorts</li>
-              <li>Spokesperson video</li>
-              <li>On-camera performance</li>
-            </ul>
-          </article>
-          <article>
-            <h3>Creative direction</h3>
-            <ul>
-              <li>Scriptwriting</li>
-              <li>Story structure</li>
-              <li>AI environments</li>
-              <li>Casting / talent sourcing</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <section id="portfolio" class="section portfolioSection">
-        <div class="sectionHeader">
-          <p class="sectionLabel">Portfolio</p>
-          <h2>Selected work</h2>
-        </div>
-        <div class="portfolioGrid">
-          <article class="portfolioCard">
-            <a class="portfolioThumb" href="https://www.upwork.com/freelancers/~0160cc048970d14fc8?p=2076913395209060352" target="_blank" rel="noreferrer" aria-label="Open Upwork case for Flashbook">
-              <img src="https://valentin-rodin-producer-portfolio.valentintui.chatgpt.site/portfolio-assets/flashbook-thumb.jpg" alt="Flashbook thumbnail" />
-              <span>Upwork</span>
+      <!-- ───────────────────────── CONTACT ───────────────────────── -->
+      <section class="section section--contact" id="contact">
+        <div class="wrap">
+          <p class="eyebrow reveal">Contact</p>
+          <h2 class="contact__title reveal">
+            Tell me what the video has to&nbsp;do.<br />I'll tell you how I'd shoot&nbsp;it.
+          </h2>
+          <p class="contact__lead reveal">
+            Available for brand content, creator-led campaigns and full-cycle video production.
+            A free 15-minute call is usually the fastest way to start.
+          </p>
+          <div class="contact__actions reveal">
+            <a class="btn btn--primary" href="https://www.upwork.com/freelancers/~0160cc048970d14fc8" target="_blank" rel="noreferrer">
+              Hire on Upwork
             </a>
-            <p>Brand content</p>
-            <h3>Flashbook</h3>
-            <span class="projectDescription">
-              Cinematic UGC-style promo for an AI-powered book summary app. Scope: concept, scriptwriting, directing, filming, editing, lighting, color correction, voice-over and on-camera performance.
-            </span>
-            <div class="tagList"><small>Brand video</small><small>UGC</small><small>Product story</small><small>Editing</small></div>
-            <a class="projectLink" href="https://www.upwork.com/freelancers/~0160cc048970d14fc8?p=2076913395209060352" target="_blank" rel="noreferrer">Open Upwork case</a>
-          </article>
-          <article class="portfolioCard">
-            <a class="portfolioThumb" href="https://www.upwork.com/freelancers/~0160cc048970d14fc8?p=2068696668419952640" target="_blank" rel="noreferrer" aria-label="Open Upwork case for Veloso Tours">
-              <img src="https://valentin-rodin-producer-portfolio.valentintui.chatgpt.site/portfolio-assets/veloso-tours-thumb.jpg" alt="Veloso Tours thumbnail" />
-              <span>Upwork</span>
+            <a class="btn" href="https://www.linkedin.com/in/valentin-rodin" target="_blank" rel="noreferrer">
+              LinkedIn
             </a>
-            <p>Travel content</p>
-            <h3>Veloso Tours</h3>
-            <span class="projectDescription">
-              AI-powered commercial built around trust, expertise and personalized service. Production covered AI actors, custom voice performances, realistic character interactions and cinematic storytelling.
-            </span>
-            <div class="tagList"><small>Travel content</small><small>Story structure</small><small>Brand content</small><small>Editing</small></div>
-            <a class="projectLink" href="https://www.upwork.com/freelancers/~0160cc048970d14fc8?p=2068696668419952640" target="_blank" rel="noreferrer">Open Upwork case</a>
-          </article>
-          <article class="portfolioCard">
-            <a class="portfolioThumb" href="https://www.upwork.com/freelancers/~0160cc048970d14fc8?p=2073940017366597632" target="_blank" rel="noreferrer" aria-label="Open Upwork case for Tronergy Hub">
-              <img src="https://valentin-rodin-producer-portfolio.valentintui.chatgpt.site/portfolio-assets/tronergy-hub-thumb.jpg" alt="Tronergy Hub thumbnail" />
-              <span>Upwork</span>
-            </a>
-            <p>Explainer content</p>
-            <h3>Tronergy Hub</h3>
-            <span class="projectDescription">
-              Full-cycle AI marketing explainer delivered from concept and scriptwriting to AI avatars, multilingual voiceovers, lip-sync, motion graphics and final edit.
-            </span>
-            <div class="tagList"><small>Explainer video</small><small>AI visuals</small><small>Story structure</small><small>Editing</small></div>
-            <a class="projectLink" href="https://www.upwork.com/freelancers/~0160cc048970d14fc8?p=2073940017366597632" target="_blank" rel="noreferrer">Open Upwork case</a>
-          </article>
-        </div>
-      </section>
-
-      <section id="contacts" class="contacts">
-        <p class="sectionLabel">Contact</p>
-        <h2>Available for video production, brand content and creator-led campaigns.</h2>
-        <div class="contactLinks">
-          <a href="https://www.upwork.com/freelancers/~0160cc048970d14fc8">Upwork</a>
-          <a href="https://www.youtube.com/@The_Modern_Coaching">YouTube</a>
-          <a href="https://www.linkedin.com/in/valentin-rodin">LinkedIn</a>
-          <a href="https://instagram.com/rodin_inbiz">Instagram</a>
-          <a href="https://m.imdb.com/name/nm14122028/?ref_=ext_shr_lnk">IMDb</a>
+          </div>
+          <ul class="contact__links reveal">
+            <li><a href="https://www.youtube.com/@The_Modern_Coaching" target="_blank" rel="noreferrer">YouTube</a></li>
+            <li><a href="https://instagram.com/rodin_inbiz" target="_blank" rel="noreferrer">Instagram</a></li>
+            <li><a href="https://m.imdb.com/name/nm14122028/" target="_blank" rel="noreferrer">IMDb</a></li>
+          </ul>
         </div>
       </section>
     </main>
+
+    <footer class="foot">
+      <div class="wrap foot__inner">
+        <span>© <span id="year">2026</span> Valentin Rodin</span>
+        <span>Video producer · Seoul, South Korea</span>
+      </div>
+    </footer>
+
+    <!-- ───────────────────────── VIDEO LIGHTBOX ───────────────────────── -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Video player" hidden>
+      <button class="lightbox__close" type="button" id="lightboxClose" aria-label="Close video">
+        <svg viewBox="0 0 20 20" width="18" height="18"><path d="M5 5l10 10M15 5 5 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" /></svg>
+      </button>
+      <div class="lightbox__frame" id="lightboxFrame"></div>
+    </div>
+
+    <script src="app.js" defer></script>
   </body>
 </html>
