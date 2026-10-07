@@ -1,0 +1,32 @@
+name: Cache cinematic photo references
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'cinematic-stories/photo-sources.json'
+      - 'cinematic-stories/cache_photos.py'
+      - '.github/workflows/cache-cinematic-photos.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: cache-cinematic-photos
+  cancel-in-progress: false
+jobs:
+  cache:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Download and validate licensed photographic JPEGs
+        run: python3 cinematic-stories/cache_photos.py
+      - name: Save local images to the repository
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add cinematic-stories/media/
+          if ! git diff --cached --quiet; then
+            git commit -m "Cache licensed cinematic reference photographs locally"
+            git push origin HEAD:main
+          fi
