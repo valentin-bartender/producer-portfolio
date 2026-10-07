@@ -19,6 +19,8 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: main
+      - name: Install photograph optimisation library
+        run: python3 -m pip install Pillow==11.3.0
       - name: Download and validate licensed photographic JPEGs
         run: python3 cinematic-stories/cache_photos.py
       - name: Save local images to the repository
